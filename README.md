@@ -44,21 +44,21 @@ O projeto visa melhorar a comunicação interna e a satisfação dos funcionári
  **I**) usuario_id - A chave primária da tabela. Um identificador único para cada usuário.
 <br> **II**) nome - O nome do usuário;
 <br> **III**) email - O endereço de e-mail do usuário;
-<br> **IV**) empresa_id - O identificador da empresa em que o usuário trabalha;
+<br> **IV**) empresa_id - O identificador da empresa em que o usuário trabalha | 'AUTO_INCREMENT' é um atributo que gera automaticamente um valor único.
 <br> **V**) A tabela Usuarios também possui uma restrição de chave estrangeira na coluna empresa_id. Isso significa que cada valor na coluna empresa_id deve corresponder a um valor existente na coluna empresa_id da tabela Empresas;
 <br> **VI**) A coluna nome e email da tabela Usuarios é do tipo varchar(255). Isso significa que a coluna pode armazenar uma string com até 255 caracteres;
 <br> **VII**) A restrição not null é uma restrição de coluna que impede que um valor NULL seja inserido em uma coluna. Isso é útil para garantir que todas as linhas de uma tabela tenham um valor válido para uma determinada coluna.
 
 **${\color{blue}Tabela-Empresas:}$** Armazena as informações sobre as empresas do sistema. Ela possui as seguintes colunas:
 
- **I**) empresa_id - A chave primária da tabela. Um identificador único para cada empresa;
+ **I**) empresa_id - A chave primária da tabela. Um identificador único para cada empresa | 'AUTO_INCREMENT' é um atributo que gera automaticamente um valor único.
  <br> **II**) nome_empresa - O nome da empresa;
  <br> **III**) endereço - O endereço da empresa.
  
 **${\color{blue}Tabela-PesquisaClima:}$** Armazena os resultados das pesquisas de clima realizadas com os usuários. Ela possui as seguintes colunas:
 
-**I**) pesquisa_id - A chave primária da tabela. Um identificador único para cada pesquisa.
-<br> **II**) usuario_id - O identificador do usuário que respondeu à pesquisa;
+**I**) pesquisa_id - A chave primária da tabela. Um identificador único para cada pesquis | 'AUTO_INCREMENT' é um atributo que gera automaticamente um valor único.
+<br> **II**) usuario_id - O identificador do usuário que respondeu à pesquisa 
 <br> **III**) satisfação - O nível de satisfação do usuário;
 <br> **IV**) comentário - Comentário do usuário.
 <br> **V**) A tabela PesquisaClima também possui uma restrição de chave estrangeira na coluna usuario_id. Isso significa que cada valor na coluna usuario_id deve corresponder a um valor existente na coluna usuario_id da tabela Usuarios.
