@@ -8,14 +8,14 @@ CREATE TABLE Usuarios (
   empresa_id INT NOT NULL,
   PRIMARY KEY (usuario_id),
   FOREIGN KEY (empresa_id) REFERENCES Empresas (empresa_id)
+);
 
-  CREATE TABLE Usuarios (
-  usuario_id INT NOT NULL AUTO_INCREMENT,
-  nome VARCHAR(255) NOT NULL,
-  email VARCHAR(255) NOT NULL,
-  empresa_id INT NOT NULL,
-  PRIMARY KEY (usuario_id),
-  FOREIGN KEY (empresa_id) REFERENCES Empresas (empresa_id)
+ CREATE TABLE Empresas (
+  empresa_id INT NOT NULL AUTO_INCREMENT,
+  nome_empresa VARCHAR(255) NOT NULL,
+  endereço VARCHAR(255) NOT NULL,
+  PRIMARY KEY (empresa_id)
+);
 
   CREATE TABLE PesquisaClima (
   pesquisa_id INT NOT NULL AUTO_INCREMENT,
