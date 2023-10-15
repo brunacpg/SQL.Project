@@ -75,7 +75,7 @@ O projeto visa melhorar a comunicação interna e a satisfação dos funcionári
 
  **I**) O comando INSERT INTO insere dados em uma tabela;
   <br> **II**) As colunas usuario_id, satisfação e comentário são preenchidas com valores fisctícios;
- <br> **III**) O valor 5 ou 4 para a coluna satisfação indica que o usuário está satisfeito com o seu trabalho. O valor 1 ou 2 para a coluna satisfação indica que o usuário está insatisfeito a sua remuneração.
+ <br> **III**) O valor 5 ou 4 para a coluna satisfação indica que o usuário está totalmente satisfeito com o seu trabalho. O valor 1 ou 2 para a coluna satisfação indica que o usuário está totalmente insatisfeito a sua remuneração.
 
 
   
